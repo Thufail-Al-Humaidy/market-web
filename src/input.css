@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  .teks-kecil {
+    @apply text-gray-500 font-semibold text-sm md:text-base;
+  }
+  .explainer-text {
+    @apply text-[14px] md:text-lg text-gray-600;
+  }
+  .filter-active {
+    background-color: #18d26e;
+    color: white;
+  }
+
+  .portfolio-item .group:hover .absolute {
+    opacity: 1;
+  }
+  /* tailwind sale */
+  .card-sale {
+    @apply border-2 border-green-600 rounded-md p-2 flex flex-col flex-1 min-w-[300px] max-w-[500px];
+  }
+  /* custom scroll sale */
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 5px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #15ff00;
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+  /* end custom scroll sale*/
+}
