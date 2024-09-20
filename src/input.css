@@ -23,6 +23,7 @@
   .card-sale {
     @apply border-2 border-green-600 rounded-md p-2 flex flex-col flex-1 min-w-[300px] max-w-[500px];
   }
+
   /* custom scroll sale */
   .custom-scrollbar::-webkit-scrollbar {
     height: 5px;
@@ -35,4 +36,33 @@
     background-color: #000000;
   }
   /* end custom scroll sale*/
+
+  /* tailwind about */
+  .svg-about {
+    @apply w-9 h-9 fill-black p-2 bg-green-500 rounded-full;
+  }
+  .card-about {
+    @apply bg-white p-2 shadow-xl rounded-md space-y-2;
+  }
+  /* end tailwind about */
+
+  /* start taiwlind test */
+  .profil {
+    @apply snap-center flex flex-col gap-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 mx-auto flex-1 min-w-[300px] max-w-[500px];
+  }
+  /* start tailwind FAQ's */
+  .question {
+    @apply bg-white p-3 px-5 rounded-md flex flex-col gap-5 shadow-md;
+  }
+  .btn-quest {
+    @apply p-2 border-2 rounded-full hover:bg-green-300 transition-all duration-200;
+  }
+  .garis {
+    @apply border-green-500 border;
+  }
+  .answer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+  }
 }

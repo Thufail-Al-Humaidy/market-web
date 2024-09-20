@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Market Place</title>
     <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <style>
-      .info-toko {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-
-      .box {
-        flex: 1 1 calc(50% - 1rem); /* Kotak akan mengambil 50% lebar layar, dikurangi gap */
-      }
-
       @media (max-width: 640px) {
         .box {
           flex: 1 1 calc(100% - 1rem); /* Di layar lebih kecil, kotak akan mengambil 100% lebar */
         }
+      }
+      .box {
+        flex: 1 1 calc(50% - 1rem); /* Kotak akan mengambil 50% lebar layar, dikurangi gap */
       }
     </style>
   </head>
@@ -179,25 +177,25 @@
               class="info-toko flex flex-wrap gap-4 p-4 bg-slate-300 rounded-lg justify-around"
             >
               <div
-                class="box px-6 py-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                class="box sm:w-full px-6 py-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
                 <h2 class="text-2xl font-bold text-[#0fb900]">OVER 1000+</h2>
                 <p class="text-gray-500 mt-2">Trendsetting Styles</p>
               </div>
               <div
-                class="box px-6 py-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                class="box sm:w-full px-6 py-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
                 <h2 class="text-2xl font-bold text-[#0fb900]">99%</h2>
                 <p class="text-gray-500 mt-2">Customer Satisfaction Rate</p>
               </div>
               <div
-                class="box px-6 py-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                class="box sm:w-full px-6 py-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
                 <h2 class="text-2xl font-bold text-[#0fb900]">24/7</h2>
                 <p class="text-gray-500 mt-2">Shopping Convenience</p>
               </div>
               <div
-                class="box px-6 py-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                class="box sm:w-full px-6 py-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
                 <h2 class="text-2xl font-bold text-[#0fb900]">30-Day</h2>
                 <p class="text-gray-500 mt-2">Hassle-Free Returns</p>
@@ -218,8 +216,8 @@
       <div class="container mx-auto p-4 md:p-6 space-y-3">
         <div class="sub-container space-y-5">
           <div class="title-sale">
-            <p class="teks-kecil">Products</p>
-            <h1>Discover Fashion.</h1>
+            <p class="teks-kecil">PRODUCTS</p>
+            <h1>DISCOVER FASHION.</h1>
           </div>
           <div class="flex justify-between flex-col gap-4 md:flex-row">
             <p class="explainer-text md:w-2/3">
@@ -247,22 +245,22 @@
               style="scrollbar-width: none"
             >
               <li
-                class="px-4 py-2 bg-green-300 rounded-sm hover:bg-green-500 duration-150 font-semibold"
+                class="px-4 py-2 bg-green-300 hover:bg-green-500 duration-150 font-semibold rounded-md"
               >
                 <a href=""></a>All
               </li>
               <li
-                class="px-4 py-2 bg-green-300 rounded-sm hover:bg-green-500 duration-150 font-semibold"
+                class="px-4 py-2 bg-green-300 hover:bg-green-500 duration-150 font-semibold rounded-md"
               >
                 <a href=""></a>Clothes
               </li>
               <li
-                class="px-4 py-2 bg-green-300 rounded-sm hover:bg-green-500 duration-150 font-semibold"
+                class="px-4 py-2 bg-green-300 hover:bg-green-500 duration-150 font-semibold rounded-md"
               >
                 <a href=""></a>Pants
               </li>
               <li
-                class="px-4 py-2 bg-green-300 rounded-sm hover:bg-green-500 duration-150 font-semibold"
+                class="px-4 py-2 bg-green-300 hover:bg-green-500 duration-150 font-semibold rounded-md"
               >
                 <a href=""></a>Books
               </li>
@@ -379,6 +377,28 @@
               <h3 class="text-xl font-bold">Classic Polo Shirt</h3>
               <p class="text-xl">$29.99</p>
             </div>
+            <div class="card-sale">
+              <div
+                class="image relative bg-gray-300 p-3 rounded-md flex flex-col gap-2"
+              >
+                <img src="img/book2.jpg" alt="" />
+                <div
+                  class="icon absolute p-2 rounded-full bg-green-500 right-1 bottom-1 hover:bg-green-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-black w-7 h-7"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold">Classic Polo Shirt</h3>
+              <p class="text-xl">$29.99</p>
+            </div>
           </div>
         </div>
       </div>
@@ -386,12 +406,558 @@
     <!-- end section sale -->
     <!-- start section about -->
     <section class="about mt-10" id="about">
-      <div class="container x-auto p-4 md:p-6">
-        
+      <div class="container mx-auto p-4 md:p-6 space-y-5">
+        <div class="title-sale">
+          <p class="teks-kecil">ABOUT US</p>
+          <h1>PENGALAMAN EL STORE.</h1>
+          <p class="mt-3 md:w-2/3">
+            EL STORE menghidupkan fashion dengan kreativitas dan kualitas.
+            Setiap koleksi kami tidak hanya mengikuti tren, tapi juga membangun
+            cerita. Bersama, kita meredefinisi gaya dan menciptakan komunitas
+            yang kuat.
+          </p>
+        </div>
+        <div
+          class="sub-container p-3 bg-gray-300 rounded-md grid md:grid-cols-3 gap-3 items-center"
+        >
+          <!-- card satu -->
+          <div class="card-about">
+            <div class="icon-about flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="svg-about"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"
+                ></path>
+              </svg>
+              <h3 class="font-bold text-xl">Keahlian yang Luar Biasa</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Setiap pakaian di EL STORE dibuat dengan penuh semangat, yang
+              mencerminkan komitmen kami terhadap kualitas dan inovasi.
+            </p>
+          </div>
+          <!-- card dua -->
+          <div class="card-about">
+            <div class="icon-about flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="svg-about"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Zm-16.11-9.34a57.6,57.6,0,0,0-46.56-46.55,8,8,0,0,0-2.66,15.78c16.57,2.79,30.63,16.85,33.44,33.45A8,8,0,0,0,176,104a9,9,0,0,0,1.35-.11A8,8,0,0,0,183.89,94.66Z"
+                ></path>
+              </svg>
+              <h3 class="font-bold text-xl">Sebuah Inspirasi Global</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Dipengaruhi oleh tren global, kami menghadirkan koleksi yang
+              beragam dan dinamis.
+            </p>
+          </div>
+          <!-- card tiga -->
+          <div class="card-about">
+            <div class="icon-about flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="svg-about"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"
+                ></path>
+              </svg>
+              <h3 class="font-bold text-xl">
+                Meningkatkan Kualitas Style Anda
+              </h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Tak hanya pakaian, EL STORE adalah sebuah gaya hidup. Bergabunglah
+              bersama kami dalam sebuah perjalanan mengekspresikan diri.
+            </p>
+          </div>
+          <!-- card empat -->
+          <div class="card-about">
+            <div class="icon-about flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="svg-about"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M201.89,54.66A103.43,103.43,0,0,0,128.79,24H128A104,104,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88.12,88.12,0,0,1,190.54,65.93,87.39,87.39,0,0,1,215.65,120H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h24a24,24,0,0,1-24,24H136a8,8,0,0,0,0,16h56a40,40,0,0,0,40-40V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm128,56a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24v56Z"
+                ></path>
+              </svg>
+              <h3 class="font-bold text-xl">Berorientasi pada Pelanggan</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Di EL STORE, pelanggan adalah inti dari semua yang kami lakukan.
+            </p>
+          </div>
+          <!-- card lima -->
+          <div class="card-about">
+            <div class="icon-about flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="svg-about"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+                ></path>
+              </svg>
+              <h3 class="font-bold text-xl">Teknik yang Berkelanjutan</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              EL STORE berkomitmen terhadap keberlanjutan, dengan
+              mengintegrasikan praktik-praktik ramah lingkungan ke dalam proses
+              produksi kami.
+            </p>
+          </div>
+          <div class="card-about">
+            <div class="icon-about flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="svg-about"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+                ></path>
+              </svg>
+              <h3 class="font-bold text-xl">Produksi Ramah Bumi</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Kami percaya bahwa keberlanjutan bukan hanya pilihan, melainkan
+              tanggung jawab. Klothink memastikan setiap produk kami dihasilkan
+              dengan memprioritaskan kelestarian lingkungan.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- end section about -->
+
+    <!-- start section testimonial -->
+    <section class="testi mt-10" id="testi">
+      <div class="container mx-auto p-4 md:p-6 space-y-5">
+        <div class="title-sale">
+          <p class="teks-kecil">TESTIMONIALS</p>
+          <h1>CUSTOMER LOVE.</h1>
+          <p class="mt-3 md:w-2/3">
+            At Klothink, our customers are the heartbeat of our brand. Explore
+            the heartfelt testimonials shared by those who have experienced the
+            magic of Klothink fashion.
+          </p>
+        </div>
+
+        <div
+          class="overflow-x-auto custom-scrollbar flex gap-6 pb-6 snap-x snap-mandatory"
+        >
+          <!-- Testimonial Card 1 -->
+          <div class="profil">
+            <div class="flex gap-4 items-center">
+              <div
+                class="photo overflow-hidden w-14 h-14 rounded-full border-4 border-teal-500"
+              >
+                <img
+                  src="img/user1.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <div class="space-y-1">
+                <h3 class="font-semibold text-gray-800 text-lg">
+                  Thufail Al Humaidy
+                </h3>
+                <div class="flex">
+                  <div class="flex">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+              quibusdam rerum labore, saepe aspernatur tenetur."
+            </p>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="profil">
+            <div class="flex gap-4 items-center">
+              <div
+                class="photo overflow-hidden w-14 h-14 rounded-full border-4 border-teal-500"
+              >
+                <img
+                  src="img/user1.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <div class="space-y-1">
+                <h3 class="font-semibold text-gray-800 text-lg">
+                  Thufail Al Humaidy
+                </h3>
+                <div class="flex">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+              quibusdam rerum labore, saepe aspernatur tenetur."
+            </p>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div class="profil">
+            <div class="flex gap-4 items-center">
+              <div
+                class="photo overflow-hidden w-14 h-14 rounded-full border-4 border-teal-500"
+              >
+                <img
+                  src="img/user1.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <div class="space-y-1">
+                <h3 class="font-semibold text-gray-800 text-lg">
+                  Thufail Al Humaidy
+                </h3>
+                <div class="flex">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+              quibusdam rerum labore, saepe aspernatur tenetur."
+            </p>
+          </div>
+
+          <!-- Testimonial Card 4 -->
+          <div class="profil">
+            <div class="flex gap-4 items-center">
+              <div
+                class="photo overflow-hidden w-14 h-14 rounded-full border-4 border-teal-500"
+              >
+                <img
+                  src="img/user1.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <div class="space-y-1">
+                <h3 class="font-semibold text-gray-800 text-lg">
+                  Thufail Al Humaidy
+                </h3>
+                <div class="flex">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+              quibusdam rerum labore, saepe aspernatur tenetur."
+            </p>
+          </div>
+          <!-- Testimonial Card 4 -->
+          <div class="profil">
+            <div class="flex gap-4 items-center">
+              <div
+                class="photo overflow-hidden w-14 h-14 rounded-full border-4 border-teal-500"
+              >
+                <img
+                  src="img/user1.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="Foto Profil"
+                />
+              </div>
+              <div class="space-y-1">
+                <h3 class="font-semibold text-gray-800 text-lg">
+                  Thufail Al Humaidy
+                </h3>
+                <div class="flex">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+              quibusdam rerum labore, saepe aspernatur tenetur."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section testimonial -->
+    <!-- start section FAQ -->
+    <section class="FAQ mt-10" id="FAQ">
+      <div class="container mx-auto p-4 md:p-6 space-y-7">
+        <div class="sub-container space-y-5">
+          <div class="title-sale">
+            <p class="teks-kecil">FAQ</p>
+            <h1>QUSETION? WE HAVE ANSWER.</h1>
+          </div>
+          <div class="flex justify-between flex-col gap-4 md:flex-row">
+            <p class="explainer-text md:w-2/3">
+              Ease into the world of Klothink with clarity. Our FAQs cover a
+              spectrum of topics, ensuring you have the information you need for
+              a seamless shopping experience.
+            </p>
+            <div class="">
+              <button
+                class="group flex items-center gap-2 px-5 py-2 bg-[#0fb900] rounded-full hover:bg-transparent hover:border-2 hover:border-[#0fb900] transition-all duration-200"
+              >
+                <p
+                  class="text-black font-semibold text-lg group-hover:text-[#0fb900] transition-colors duration-200"
+                >
+                  Vill All FAQ’s
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="type">
+          <ul
+            class="flex gap-5 overflow-x-scroll"
+            style="scrollbar-width: none"
+          >
+            <li
+              class="px-4 py-2 bg-green-300 hover:bg-green-500 duration-150 font-semibold rounded-md"
+            >
+              <a href="">All </a>
+            </li>
+            <li
+              class="px-4 py-2 bg-green-300 hover:bg-green-500 duration-150 font-semibold rounded-md"
+            >
+              <a href="">Ordering </a>
+            </li>
+            <li
+              class="px-4 py-2 bg-green-300 hover:bg-green-500 duration-150 font-semibold rounded-md"
+            >
+              <a href="">Shipping </a>
+            </li>
+            <li
+              class="px-4 py-2 bg-green-300 hover:bg-green-500 duration-150 font-semibold rounded-md"
+            >
+              <a href="">Returns </a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-question flex flex-col gap-3 md:flex-row">
+          <div class="content-question flex flex-col gap-2 md:basis-2/3">
+            <!-- question 1 -->
+            <div class="question">
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Bagaimana saya dapat memesan di EL Store?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Memesan itu mudah! Cukup telusuri situs web kami, tambahkan
+                  barang ke keranjang belanja Anda, dan lanjutkan ke pembayaran.
+                  Ikuti petunjuk untuk memasukkan detail Anda dan menyelesaikan
+                  pembelian Anda.
+                </p>
+              </div>
+            </div>
+            <!-- question 2 -->
+            <div class="question">
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Metode pembayaran apa yang Anda terima?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Kami menerima pembayaran melalui transfer bank, kartu kredit,
+                  dan dompet digital seperti GoPay dan OVO.
+                </p>
+              </div>
+            </div>
+            <!-- question 3 -->
+            <div class="question">
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Bagaimana cara melacak pesanan saya?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Anda dapat melacak pesanan Anda dengan menggunakan nomor
+                  pelacakan yang dikirim ke email Anda setelah pembelian.
+                </p>
+              </div>
+            </div>
+            <!-- question 4 -->
+            <div class="question">
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Bagaimana kebijakan pengiriman Anda?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Kami menawarkan pengiriman standar dengan perkiraan waktu
+                  pengiriman 3-7 hari kerja, tergantung pada lokasi Anda.
+                </p>
+              </div>
+            </div>
+            <!-- question 5 -->
+            <div class="question">
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Apakah saya bisa mengubah alamat pengiriman setelah melakukan
+                  pemesanan?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Anda dapat mengubah alamat pengiriman sebelum pesanan dikirim.
+                  Hubungi layanan pelanggan segera.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="your-question bg-white shadow-xl p-4 rounded-md flex flex-col gap-3 md:basis-1/3"
+          >
+            <h2>Berikan Pertanyaan Anda</h2>
+            <div class="garis"></div>
+            <form action="" class="flex flex-col gap-4">
+              <div class="nama">
+                <label for="name" class="block text-sm font-semibold mb-2"
+                  >Nama</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Masukkan Nama Anda"
+                  class="w-full px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 bg-green-200 shadow-md"
+                />
+              </div>
+              <div class="Email">
+                <label for="Email" class="block text-sm font-semibold mb-2"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  id="Email"
+                  placeholder="Masukkan Email Anda"
+                  class="w-full px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 bg-green-200 shadow-md"
+                />
+              </div>
+              <div class="Question">
+                <label for="Question" class="block text-sm font-semibold mb-2"
+                  >Pertanyaan Anda</label
+                >
+                <textarea
+                  id="Question"
+                  rows="3"
+                  placeholder="Masukkan Pertanyaan Anda..."
+                  class="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 bg-green-200 shadow-md"
+                ></textarea>
+              </div>
+              <button
+                class="px-4 py-2 bg-green-300 rounded-md hover:bg-green-600 transition duration-300 ease-in-out"
+              >
+                Mengirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section FAQ -->
     <div class="mb-9"></div>
+
     <script src="script.js"></script>
   </body>
 </html>
