@@ -39,10 +39,10 @@
 
   /* tailwind about */
   .svg-about {
-    @apply w-9 h-9 fill-black p-2 bg-green-500 rounded-full;
+    @apply bg-green-500 p-2 rounded-full;
   }
   .card-about {
-    @apply bg-white p-2 shadow-xl rounded-md space-y-2;
+    @apply p-6 bg-white shadow-lg rounded-lg transition-all transform hover:scale-105 hover:shadow-2xl hover:bg-green-200 duration-500 ease-in-out;
   }
   /* end tailwind about */
 
@@ -64,5 +64,10 @@
     height: 0;
     overflow: hidden;
     transition: height 0.4s ease;
+  }
+
+  /* tailwind experience */
+  .card-exp {
+    @apply flex-1 min-w-[300px] max-w-[500px] bg-white p-3 space-y-3 shadow-xl rounded-xl flex flex-col justify-around;
   }
 }
