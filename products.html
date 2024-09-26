@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Untuk layar besar, hilangkan scroll */
+      @media (min-width: 565px) {
+        .tabs-container .custom-scrollbar {
+          overflow-x: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#B7D6D2]">
+    <section>
+      <div class="container mx-auto p-4 md:p-6">
+        <div class="sub-container space-y-5">
+          <div class="title-sale">
+            <p class="teks-kecil">PRODUCTS</p>
+            <h1>JELAJAHI DUNIA FASHION.</h1>
+          </div>
+          <div class="flex justify-between flex-col gap-4 md:flex-row">
+            <p class="explainer-text md:w-2/3">
+              Temukan inovasi fashion terkini di EL STORE. Kami menghadirkan
+              koleksi yang dirancang khusus, memadukan tren terbaru dengan
+              sentuhan klasik yang tak lekang oleh waktu. Temukan pilihan
+              terbaik yang akan melengkapi gayamu di setiap momen istimewa.
+            </p>
+            <div class="">
+              <button
+                class="group flex items-center gap-2 px-5 py-2 bg-[#0fb900] rounded-full hover:bg-transparent hover:border-2 hover:border-[#0fb900] transition-all duration-200"
+              >
+                <p
+                  class="text-black font-semibold text-lg group-hover:text-[#0fb900] transition-colors duration-200"
+                >
+                  View all Products
+                </p>
+              </button>
+            </div>
+          </div>
+          <div class="sub-container flex flex-col md:flex-row gap-2">
+            <div
+              class="p-2 bg-white shadow-xl w-full md:w-1/3 text-center rounded-md"
+            >
+              <h3 class="font-semibold">Penawaran Eksklusif</h3>
+              <p>Diskon 30% untuk item tertentu</p>
+            </div>
+            <div
+              class="p-2 bg-white shadow-xl w-full md:w-1/3 text-center rounded-md"
+            >
+              <h3 class="font-semibold">New Arrivals</h3>
+              <p>50+ new arrivals Daily</p>
+            </div>
+            <div
+              class="p-2 bg-white shadow-xl w-full md:w-1/3 text-center rounded-md"
+            >
+              <h3 class="font-semibold">Over 1,500 +</h3>
+              <p>curated fashion products.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-container">
+          <div
+            class="flex md:justify-center overflow-x-scroll gap-3 custom-scrollbar pb-4 snap-x snap-mandatory mt-10"
+          >
+            <div class="type">
+              <i class="ph ph-t-shirt text-black text-2xl font-bold"></i>
+              <a href="" class="font-semibold">Pakaian Pria</a>
+            </div>
+            <div class="type">
+              <i class="ph ph-dress text-black text-2xl font-bold"></i>
+              <a href="" class="font-semibold">Pakaian Wanita</a>
+            </div>
+            <div class="type">
+              <i class="ph ph-t-shirt text-black text-2xl font-bold"></i>
+              <a href="" class="font-semibold">Libasut Taqwa</a>
+            </div>
+            <div class="type">
+              <i class="ph ph-t-shirt text-black text-2xl font-bold"></i>
+              <a href="" class="font-semibold">Buku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="baju">
+      <div class="container mx-auto p-4 md:p-6">
+        <div class="judul space-y-2 mb-5">
+          <h2 class="text-xl font-bold">CASUAL COLLECTION</h2>
+          <p>
+            Temukan koleksi pakaian kasual pria serbaguna kami, yang
+            mempertemukan kenyamanan dengan mode kontemporer.
+          </p>
+        </div>
+        <div
+          class="item flex overflow-x-scroll gap-4 custom-scrollbar pb-4 snap-x scroll-smooth snap-mandatory"
+        >
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="baju">
+      <div class="container mx-auto p-4 md:p-6">
+        <div class="judul space-y-2 mb-5">
+          <h2 class="text-xl font-bold">Formal Elegance</h2>
+          <p>
+            Jelajahi elegan yang tanpa batas dengan koleksi Formal Elegance
+            kami, yang menampilkan produk yang halus untuk tampilan yang
+            sempurna.
+          </p>
+        </div>
+        <div
+          class="item flex overflow-x-scroll gap-4 custom-scrollbar pb-4 snap-x scroll-smooth snap-mandatory"
+        >
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="baju">
+      <div class="container mx-auto p-4 md:p-6">
+        <div class="judul space-y-2 mb-5">
+          <h2 class="text-xl font-bold">ACTIVE LIFESTYLE</h2>
+          <p>
+            Rasakan gaya hidup aktif dengan pakaian pria kami yang berbasis
+            performa, yang dirancang untuk kenyamanan dan fleksibilitas.
+          </p>
+        </div>
+        <div
+          class="item flex overflow-x-scroll gap-4 custom-scrollbar pb-4 snap-x scroll-smooth snap-mandatory"
+        >
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/sale.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mb-10"></div>
+    <!-- <section class="baju mt-10">
+      <div class="container mx-auto p-4 md:p-6">
+        <div class="judul space-y-2 mb-5">
+          <h2 class="text-2xl font-bold text-gray-800">CASUAL COLLECTION</h2>
+          <p class="text-gray-600">
+            Temukan koleksi pakaian kasual pria serbaguna kami, yang
+            mempertemukan kenyamanan dengan mode kontemporer.
+          </p>
+        </div>
+        <div
+          class="item flex overflow-x-scroll gap-6 custom-scrollbar pb-4 snap-x scroll-smooth snap-mandatory"
+        >
+          <div class="card-product space-y-3 snap-center">
+            <div class="image rounded-md flex flex-col gap-2">
+              <img
+                src="img/sale.jpg"
+                alt=""
+                class="rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">Celana Formal</h3>
+            <div class="flex justify-between text-gray-700">
+              <p class="text-[16px]">Slim Fit</p>
+              <p class="text-[16px] font-semibold text-gray-800">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-300 text-gray-700 hover:bg-gray-400 transition-all duration-300"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div class="card-product space-y-3 snap-center">
+            <div class="image rounded-md flex flex-col gap-2">
+              <img
+                src="img/sale.jpg"
+                alt=""
+                class="rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">Celana Formal</h3>
+            <div class="flex justify-between text-gray-700">
+              <p class="text-[16px]">Slim Fit</p>
+              <p class="text-[16px] font-semibold text-gray-800">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-300 text-gray-700 hover:bg-gray-400 transition-all duration-300"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div class="card-product space-y-3 snap-center">
+            <div class="image rounded-md flex flex-col gap-2">
+              <img
+                src="img/sale.jpg"
+                alt=""
+                class="rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">Celana Formal</h3>
+            <div class="flex justify-between text-gray-700">
+              <p class="text-[16px]">Slim Fit</p>
+              <p class="text-[16px] font-semibold text-gray-800">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-300 text-gray-700 hover:bg-gray-400 transition-all duration-300"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div class="card-product space-y-3 snap-center">
+            <div class="image rounded-md flex flex-col gap-2">
+              <img
+                src="img/sale.jpg"
+                alt=""
+                class="rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">Celana Formal</h3>
+            <div class="flex justify-between text-gray-700">
+              <p class="text-[16px]">Slim Fit</p>
+              <p class="text-[16px] font-semibold text-gray-800">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-300 text-gray-700 hover:bg-gray-400 transition-all duration-300"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div class="card-product space-y-3 snap-center">
+            <div class="image rounded-md flex flex-col gap-2">
+              <img
+                src="img/sale.jpg"
+                alt=""
+                class="rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">Celana Formal</h3>
+            <div class="flex justify-between text-gray-700">
+              <p class="text-[16px]">Slim Fit</p>
+              <p class="text-[16px] font-semibold text-gray-800">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-300 text-gray-700 hover:bg-gray-400 transition-all duration-300"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div class="card-product space-y-3 snap-center">
+            <div class="image rounded-md flex flex-col gap-2">
+              <img
+                src="img/sale.jpg"
+                alt=""
+                class="rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">Celana Formal</h3>
+            <div class="flex justify-between text-gray-700">
+              <p class="text-[16px]">Slim Fit</p>
+              <p class="text-[16px] font-semibold text-gray-800">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-300 text-gray-700 hover:bg-gray-400 transition-all duration-300"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

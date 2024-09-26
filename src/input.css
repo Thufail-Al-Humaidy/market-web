@@ -58,7 +58,7 @@
     @apply p-2 border-2 rounded-full hover:bg-green-300 transition-all duration-200;
   }
   .garis {
-    @apply border-green-500 border;
+    @apply bg-green-500;
   }
   .answer {
     height: 0;
@@ -70,4 +70,64 @@
   .card-exp {
     @apply flex-1 min-w-[300px] max-w-[500px] bg-white p-3 space-y-3 shadow-xl rounded-xl flex flex-col justify-around;
   }
+
+  /* products */
+  .type {
+    @apply bg-green-400 hover:bg-teal-400 transition-all duration-200 px-4 py-3 rounded-md whitespace-nowrap snap-center flex items-center gap-2;
+  }
+  .card-product {
+    @apply bg-white p-4 shadow-lg rounded-md flex flex-col flex-1 min-w-[300px] max-w-[500px];
+  }
+
+  /* detail page */
+  .detail-img {
+    @apply bg-gray-300 hover:bg-teal-400 transition-all duration-200 p-3 rounded-md shadow-md  hover:shadow-xl;
+  }
+  .buy-card {
+    @apply px-3 py-2 shadow-xl bg-blue-600 rounded-md flex items-center gap-3 hover:bg-blue-500 transition-all duration-200 justify-around;
+  }
+  /* .card-product {
+    @apply bg-white p-4 shadow-lg rounded-md flex flex-col flex-1 min-w-[280px] max-w-[320px] transition-transform duration-300 hover:shadow-2xl;
+  }
+
+  .card-product:hover {
+    transform: translateY(-10px);
+  }
+
+  h2 {
+    @apply text-gray-900 text-3xl;
+  }
+
+  .judul p {
+    @apply text-gray-600;
+  }
+
+  .card-product h3 {
+    @apply text-gray-800 text-xl;
+  }
+
+  .card-product p {
+    @apply text-gray-600;
+  }
+
+  .card-product .aksi button {
+    @apply py-2 px-4 rounded-md text-white transition-all duration-300;
+  }
+
+  .card-product .aksi button:first-child {
+    @apply bg-blue-500 hover:bg-blue-600;
+  }
+
+  .card-product .aksi button:last-child {
+    @apply bg-gray-300 text-gray-700 hover:bg-gray-400;
+  }
+
+  .card-product .image img {
+    @apply rounded-md shadow-md;
+    transition: transform 0.3s;
+  }
+
+  .card-product .image img:hover {
+    transform: scale(1.05);
+  } */
 }
