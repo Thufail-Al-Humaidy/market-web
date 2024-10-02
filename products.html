@@ -20,6 +20,96 @@
     </style>
   </head>
   <body class="bg-[#B7D6D2]">
+    <header class="flex items-center">
+      <nav
+        class="container bg-gray-900 py-3 px-5 md:px-6 flex items-center justify-between relative w-full mx-auto"
+      >
+        <ul class="hidden md:flex gap-[14px] items-center">
+          <li
+            class="bg-blue-500 px-3 py-2 rounded-md hover:bg-blue-500 transition-all duration-200 text-white font-semibold"
+          >
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="bg-blue-500 px-3 py-2 rounded-md hover:bg-blue-500 transition-all duration-200 text-white font-semibold"
+          >
+            <a href="products.html">Products</a>
+          </li>
+        </ul>
+        <div class="logo flex items-center gap-3">
+          <img
+            src="img/logo.png"
+            class="h-7 w-9 md:h-8 md:w-10"
+            alt="Logo THUFAIL AL HUMAIDY"
+          />
+          <a href="#" class="text-[16px] font-bold md:hidden text-white"
+            ><span class="text-[#3da1ff]">EL</span> STORE</a
+          >
+        </div>
+        <div class="flex gap-3 items-center">
+          <a
+            href=""
+            class="bg-blue-500 border-2 p-2 rounded-full hover:bg-transparent flex items-center transition-all duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 fill-white transition-all duration-200"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/6287755229065"
+            class="hidden md:flex font-semibold text-white"
+            >Contact Support</a
+          >
+          <button
+            id="menubtn"
+            class="p-[10px] bg-blue-500 rounded-md md:hidden hover:bg-transparent border-2 transition-all duration-200"
+          >
+            <svg
+              class="h-6 w-6 fill-white"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 6.75C3 6.33579 3 6 3.75 6H20.25C20.6642 6 21 6.33579 21 6.75C21 7.16421 20.6642 7.5 20.25 7.5H3.75C3.33579 7.5 3 7.16421 3 6.75ZM3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12ZM11.25 17.25C11.25 16.8358 11.5858 16.5 12 16.5H20.25C20.6642 16.5 21 16.8358 21 17.25C21 17.6642 20.6642 18 20.25 18H12C11.5858 18 11.25 17.6642 11.25 17.25Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <aside
+          id="mobileMenu"
+          class="md:hidden absolute left-0 right-0 top-full text-white bg-gray-900 rounded-b-md space-y-2 p-4 transform scale-y-0 origin-top transition-transform duration-200 ease-in-out"
+        >
+          <ul class="flex flex-col text-center w-full gap-3">
+            <li
+              class="bg-blue-500 px-3 py-2 rounded-md hover:bg-blue-500 transition-all duration-200"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="bg-blue-500 px-3 py-2 rounded-md hover:bg-blue-500 transition-all duration-200"
+            >
+              <a href="products.html">Products</a>
+            </li>
+            <li
+              class="bg-[#2966e9] px-3 py-2 rounded-md hover:bg-transparent border-2 border-blue-300 transition-all duration-200"
+            >
+              <a href="https://wa.me/6287755229065">Contact Us</a>
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
     <section>
       <div class="container mx-auto p-4 md:p-6">
         <div class="sub-container space-y-5">
@@ -91,7 +181,7 @@
         </div>
       </div>
     </section>
-    <section class="baju">
+    <section class="baju" id="baju">
       <div class="container mx-auto p-4 md:p-6">
         <div class="judul space-y-2 mb-5">
           <h2 class="text-xl font-bold">CASUAL COLLECTION</h2>
@@ -256,7 +346,7 @@
         </div>
       </div>
     </section>
-    <section class="baju">
+    <section class="baju" id="celana">
       <div class="container mx-auto p-4 md:p-6">
         <div class="judul space-y-2 mb-5">
           <h2 class="text-xl font-bold">Formal Elegance</h2>
@@ -273,7 +363,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/celana.png" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -298,7 +388,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/celana.png" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -323,7 +413,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/celana.png" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -348,7 +438,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/celana.png" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -373,7 +463,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/celana.png" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -398,7 +488,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/celana.png" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -422,7 +512,7 @@
         </div>
       </div>
     </section>
-    <section class="baju">
+    <section class="baju" id="buku">
       <div class="container mx-auto p-4 md:p-6">
         <div class="judul space-y-2 mb-5">
           <h2 class="text-xl font-bold">ACTIVE LIFESTYLE</h2>
@@ -438,7 +528,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/buku.jpg" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -463,7 +553,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/buku.jpg" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -488,7 +578,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/buku.jpg" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -513,7 +603,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/buku.jpg" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -538,7 +628,7 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/buku.jpg" alt="" class="rounded-md" />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">
@@ -563,7 +653,172 @@
             class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
           >
             <div class="image rounded-md flex flex-col gap-2">
-              <img src="img/sale.jpg" alt="" class="rounded-md" />
+              <img src="img/buku.jpg" alt="" class="rounded-md" />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="baju" id="taqwa">
+      <div class="container mx-auto p-4 md:p-6">
+        <div class="judul space-y-2 mb-5">
+          <h2 class="text-xl font-bold">ACTIVE LIFESTYLE</h2>
+          <p>
+            Rasakan gaya hidup aktif dengan pakaian pria kami yang berbasis
+            performa, yang dirancang untuk kenyamanan dan fleksibilitas.
+          </p>
+        </div>
+        <div
+          class="item flex overflow-x-scroll gap-4 custom-scrollbar pb-4 snap-x scroll-smooth snap-mandatory"
+        >
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/taqwa.jpeg" alt="" class="rounded-md  " />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/taqwa.jpeg" alt="" class="rounded-md  " />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/taqwa.jpeg" alt="" class="rounded-md  " />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/taqwa.jpeg" alt="" class="rounded-md  " />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/taqwa.jpeg" alt="" class="rounded-md  " />
+            </div>
+            <h3 class="text-xl font-bold">Celana Formal</h3>
+            <div class="flex justify-between">
+              <p class="text-[18px]">Slim Fit</p>
+              <p class="text-[18px] font-semibold">98.000</p>
+            </div>
+            <div class="aksi flex justify-between">
+              <button
+                onclick="window.location.href='detail.html';"
+                class="w-28 py-2 font-semibold rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-200"
+              >
+                Beli
+              </button>
+              <button
+                class="w-28 py-2 font-semibold rounded-md bg-gray-400 hover:bg-blue-400 transition-all duration-200"
+              >
+                Keranjang
+              </button>
+            </div>
+          </div>
+          <div
+            class="card-product space-y-2 snap-center hover:-translate-y-1 hover:shadow-2xl transition-all duration-200"
+          >
+            <div class="image rounded-md flex flex-col gap-2">
+              <img src="img/taqwa.jpeg" alt="" class="rounded-md  " />
             </div>
             <h3 class="text-xl font-bold">Celana Formal</h3>
             <div class="flex justify-between">

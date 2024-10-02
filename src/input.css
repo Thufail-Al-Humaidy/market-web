@@ -29,11 +29,12 @@
     height: 5px;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #15ff00;
+    background-color: #00c6ee;
     border-radius: 10px;
   }
   .custom-scrollbar::-webkit-scrollbar-track {
     background-color: #000000;
+    padding: 5px;
   }
   /* end custom scroll sale*/
 
@@ -65,6 +66,13 @@
     overflow: hidden;
     transition: height 0.4s ease;
   }
+  /* textarea#Question,
+  input#name,
+  input#Email {
+    padding: 0.75rem;
+    margin: 0;
+    box-sizing: border-box; 
+  } */
 
   /* tailwind experience */
   .card-exp {
@@ -75,8 +83,16 @@
   .type {
     @apply bg-green-400 hover:bg-teal-400 transition-all duration-200 px-4 py-3 rounded-md whitespace-nowrap snap-center flex items-center gap-2;
   }
+
   .card-product {
     @apply bg-white p-4 shadow-lg rounded-md flex flex-col flex-1 min-w-[300px] max-w-[500px];
+  }
+
+  .card-product .image img {
+    width: 100%; /* Lebar penuh dari elemen parent */
+    height: 300px; /* Tinggi yang diinginkan, bisa disesuaikan */
+    object-fit: cover; /* Memotong gambar agar tetap proporsional */
+    /* border-radius: 8px; Menjaga sudut gambar tetap melengkung */
   }
 
   /* detail page */
@@ -130,4 +146,8 @@
   .card-product .image img:hover {
     transform: scale(1.05);
   } */
+
+  html {
+    scroll-behavior: smooth;
+  }
 }

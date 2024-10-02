@@ -4,6 +4,15 @@ document.getElementById("menubtn").addEventListener("click", function () {
   mobileMenu.classList.toggle("scale-y-100");
 });
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
 
 // about
 
@@ -35,3 +44,4 @@ function toggleAnswer(button) {
         answerDiv.style.height = fullHeight;
       }
     }
+

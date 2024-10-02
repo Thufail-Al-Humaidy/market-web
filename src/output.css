@@ -640,12 +640,13 @@ h1 {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #15ff00;
+  background-color: #00c6ee;
   border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
   background-color: #000000;
+  padding: 5px;
 }
 
 /* end custom scroll sale*/
@@ -758,6 +759,14 @@ h1 {
   transition: height 0.4s ease;
 }
 
+/* textarea#Question,
+  input#name,
+  input#Email {
+    padding: 0.75rem;
+    margin: 0;
+    box-sizing: border-box; 
+  } */
+
 /* tailwind experience */
 
 .card-exp {
@@ -823,6 +832,17 @@ h1 {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card-product .image img {
+  width: 100%;
+  /* Lebar penuh dari elemen parent */
+  height: 300px;
+  /* Tinggi yang diinginkan, bisa disesuaikan */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Memotong gambar agar tetap proporsional */
+  /* border-radius: 8px; Menjaga sudut gambar tetap melengkung */
 }
 
 /* detail page */
@@ -917,6 +937,10 @@ h1 {
   .card-product .image img:hover {
     transform: scale(1.05);
   } */
+
+html {
+  scroll-behavior: smooth;
+}
 
 .sr-only {
   position: absolute;
