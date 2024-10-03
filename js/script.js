@@ -45,3 +45,12 @@ function toggleAnswer(button) {
       }
     }
 
+$('.single-item-rtl').slick({
+  rtl: true, // Menjalankan carousel dari kanan ke kiri
+  slidesToShow: 3, // Menampilkan 3 gambar sekaligus
+  slidesToScroll: 1, // Menggeser satu per satu gambar
+  autoplay: true, // Menjalankan carousel otomatis
+  autoplaySpeed: 2000, // Kecepatan autoplay (2 detik)
+  dots: true, // Menampilkan titik navigasi
+  arrows: true // Menampilkan panah navigasi
+});
